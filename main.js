@@ -24,4 +24,8 @@ async function fetchQuote() {
     }
 }
 
+// Initial quote fetch
 fetchQuote();
+
+// Event listener for the refresh button
+document.getElementById('refreshButton').addEventListener('click', fetchQuote);
